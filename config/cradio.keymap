@@ -57,7 +57,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ 1        │ PAGE DN  │ PAGE UP  │ END      │  DEL     │
         //  &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
-            &ESC         &trans     &trans     &trans     &tran          &kp DEL    &kp N7     &kp N8     &kp N9     &kp DEL
+            &kp ESC    &trans     &trans     &trans     &tran          &kp DEL    &kp N7     &kp N8     &kp N9     &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp DEL    &kp N4     &kp N5     &kp N6     &kp SEMI
