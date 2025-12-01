@@ -6,7 +6,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
+// Home Row Mod Left
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
+// Home Row Left Thumb
+#define HRMTL(k1) &ht LEFT_META k2
+// Home Row Mod Right
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
@@ -45,7 +49,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp ENTER      &kp BSPC   &lt 1 SPACE
+                                            &lt 2 TAB   HRMTL(ENTER)   &kp BSPC   &lt 1 SPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -56,7 +60,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
         //   &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
-             &kp ESC   &kp LBKT     &kp LBRC  &kp RBRC    &tran         &kp DEL    &kp N7     &kp N8     &kp N9     &kp MINUS
+             &kp ESC   &kp LBKT     &kp LBRC  &kp RBRC   &trans         &kp DEL    &kp N7     &kp N8     &kp N9     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
         //  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    //&kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE    
@@ -78,7 +82,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ 1        │ PAGE DN  │ PAGE UP  │ END      │  DEL     │
         //  &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
-            &kp TILDE  &trans     &trans     &trans     &tran          &kp DEL    &kp N7     &kp UP     &kp BSPC    &kp DEL
+            &kp TILDE  &trans     &trans     &trans     &trans         &kp DEL    &kp N7     &kp UP     &kp BSPC    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT   &kp SEMI
