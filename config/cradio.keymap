@@ -49,7 +49,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   HRMTL(ENTER)   &kp BSPC   &lt 1 SPACE
+                                            &lt 1 TAB   HRMTL(ENTER)   &kp BSPC   &lt 2 SPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -60,7 +60,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
         //   &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
-             &kp ESC   &kp LBKT     &kp LBRC  &kp RBRC   &trans         &kp DEL    &kp N7     &kp N8     &kp N9     &kp MINUS
+             &kp ESC    &kp LBKT     &kp LBRC  &kp RBRC   &trans         &kp DEL    &kp N7     &kp N8     &kp N9     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
         //  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    //&kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE    
@@ -68,7 +68,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
         //   &trans     &trans     &trans     &trans     &trans        &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
-            &kp ASTRK   &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE     &kp N4     &kp N1     &kp N2     &kp N3     &kp ENTER
+            &kp ASTRK   &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE     &trans     &kp N1     &kp N2     &kp N3     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
