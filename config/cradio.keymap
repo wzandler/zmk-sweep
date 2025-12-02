@@ -68,9 +68,9 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
         //   &trans     &trans     &trans     &trans     &trans        &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
-            &kp ASTRK   &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE     &trans     &kp N1     &kp N2     &kp N3     &kp ENTER
+            &kp ASTRK   &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE     &kp N0     &kp N1     &kp N2     &kp N3     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &kp N0
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
