@@ -7,7 +7,7 @@
 
 // Home row mods macro
 // Home Row Mod Left
-#define HRML(k1,k2,k3,k4) &ht LSHIFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
+#define HRML(k1,k2,k3,k4) &ht LSHIFT k1  &ht LCTRL k2  &ht LALT k3  &ht LGUI k4
 // Home Row Left Thumb
 #define HRMTL(k1) &ht LGUI k1
 // Home Row Mod Right
