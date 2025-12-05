@@ -67,7 +67,7 @@
         //│    `     |      ~   │     |    │    /     │          │   │          │  _       │  +       │  =       │  :       │
             &kp GRAVE   &kp TILDE  &kp PIPE  &kp BSLH   &kp GRAVE      &trans     &kp MINUS   &kp PLUS   &kp EQUAL  &kp COLON
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &kp N0
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
