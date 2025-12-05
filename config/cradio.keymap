@@ -58,19 +58,16 @@
             display-name = "Left Layer";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-        //   &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
-             &kp ESC    &kp LBKT     &kp LBRC  &kp RBRC   &trans         &kp DEL    &kp N7     &kp N8     &kp N9     &kp MINUS
+        //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  _       │  \       │
+            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT     &kp CAROT   &kp AMP   &kp ASTERISK &kp UNDER  &kp BSLH         
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-        //  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    //&kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE    
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT       &trans    &kp N4    &kp N5    &kp N6        &kp PLUS
+        //│          │  (       │  {       │  [       │          │   │  DEL     │  )       │  }       │  ]       │  ;       │        
+             &kp ESC    &kp LPAR   &kp LBRC   &kp LBKT   &trans         &kp DEL    &kp RPAR   &kp RBRC   &kp RBKT  &kp SEMI                                               
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-        //   &trans     &trans     &trans     &trans     &trans        &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
-            &kp ASTRK   &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE     &kp N0     &kp N1     &kp N2     &kp N3     &kp ENTER
+        //│    `     |      ~   │     |    │    /     │          │   │          │  _       │  +       │  =       │  :       │
+            &kp GRAVE   &kp TILDE  &kp PIPE  &kp BSLH   &kp GRAVE      &trans     &kp MINUS   &kp PLUS   &kp EQUAL  &kp COLON
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &trans         &trans     &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -80,17 +77,16 @@
             display-name = "Right Layer";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  3       │          │   │ 1        │ PAGE DN  │ PAGE UP  │ END      │  DEL     │
-        //  &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
-            &kp TILDE  &trans     &trans     &trans     &trans         &kp DEL    &kp N7     &kp UP     &kp BSPC    &kp DEL
+        //│ ESC      │          │  UP      │          │          │   │ DEL      │ 7        │ 8        │ 9        │  -       │
+            &kp ESC     &trans     &UP        &trans     &trans        &kp DEL    &kp N7     &kp N8     &kp N9      &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT   &kp SEMI
+        //│          │  LEFT    │  DOWN    │  RIGHT   │          │   │          │ 4        │ 5        │ 6        │  +       │
+            &trans      &kp LEFT   &kp DOWN   &kp RIGHT &trans         &trans     &kp N4     &kp N5     &kp N6      &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0        &kp DEL     &kp N1     &kp N2     &kp N3     &kp COLON
+        //│ CAPS     │          │          │          │          │   │          │ 1        │ 2        │ 3        │  0       │
+           &caps_word  &trans     &trans      &trans    &trans         &trans     &kp N1      &kp N2     &kp N3     &kp N0
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &kp N0
+                                              &trans     &kp ESC       &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
